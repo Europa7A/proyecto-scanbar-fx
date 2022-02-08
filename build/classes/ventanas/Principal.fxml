@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="858.0" prefHeight="720.0" prefWidth="1280.0" styleClass="principal" stylesheets="@../estilos/principal.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.PrincipalController">
+    <children>
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+            <children>
+                <GridPane maxHeight="60.0" maxWidth="1.7976931348623157E308" minHeight="60.0" minWidth="-Infinity" prefHeight="60.0" styleClass="menu-bar-container">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="443.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="837.0" prefWidth="837.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane prefHeight="60.0" prefWidth="622.0" GridPane.hgrow="ALWAYS">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="124.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.33332824707031" minWidth="10.0" prefWidth="76.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Mi tienda" textFill="WHITE" GridPane.halignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="19.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="44.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                    <image>
+                                        <Image url="@../assets/images/logo-principal.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </GridPane>
+                        <GridPane maxHeight="60.0" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="789.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="110.0" prefWidth="110.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="110.0" prefWidth="110.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="110.0" prefWidth="110.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="110.0" prefWidth="110.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="110.0" prefWidth="110.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Hyperlink fx:id="menuInventarioProductos" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Inventario productos" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS">
+                                    <graphic>
+                                        <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assets/icon/pdf-icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Hyperlink>
+                                <Hyperlink fx:id="menuRegistrarProductos" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Administrar productos" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS">
+                                    <graphic>
+                                        <ImageView fitHeight="49.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assets/icon/description-product.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Hyperlink>
+                                <Hyperlink fx:id="menuCerrarSesion" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Cerrar sesión" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS">
+                                    <graphic>
+                                        <ImageView fitHeight="45.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assets/icon/logout-icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Hyperlink>
+                                <Hyperlink fx:id="menuBackup" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Backup datos" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assets/icon/db-backup.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Hyperlink>
+                                <Hyperlink fx:id="menuRestaurar" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Restaurar datos" GridPane.hgrow="ALWAYS">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assets/icon/db-restore.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Hyperlink>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" prefHeight="500.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+                    <tabs>
+                        <Tab text="Principal">
+                            <content>
+                                <GridPane prefHeight="626.0" prefWidth="1378.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="497.0" minWidth="395.0" prefWidth="395.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="78.00003051757812" prefWidth="78.00003051757812" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="430.0" prefWidth="684.9999694824219" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="59.0" minHeight="59.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="85.0" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="59.0" minHeight="59.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="59.0" minHeight="59.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="174.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="34.0" minHeight="0.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="74.0" minHeight="72.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="tfCodigo" maxHeight="50.0" promptText="Escanear código de barra" styleClass="text-field--input">
+                                            <GridPane.margin>
+                                                <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                                            </GridPane.margin>
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </TextField>
+                                        <TextField fx:id="tfNombre" maxHeight="50.0" promptText="Nombre del producto" styleClass="text-field--input" GridPane.rowIndex="2">
+                                            <GridPane.margin>
+                                                <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                                            </GridPane.margin>
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </TextField>
+                                        <TextField fx:id="tfPrecio" maxHeight="50.0" promptText="Precio del producto" styleClass="text-field--input" GridPane.rowIndex="3">
+                                            <GridPane.margin>
+                                                <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                                            </GridPane.margin>
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </TextField>
+                                        <GridPane vgap="10.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowSpan="9">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="425.0" vgrow="SOMETIMES" />
+                                                <RowConstraints />
+                                            </rowConstraints>
+                                            <children>
+                                                <GridPane GridPane.rowSpan="2">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                        <ColumnConstraints />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <Label styleClass="marca-agua" text="Bienvenido a" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font size="50.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.45" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                            <image>
+                                                                <Image url="@../assets/images/logo-principal.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                        <Label styleClass="marca-agua" text="Mi tienda" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font name="System Bold" size="50.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </GridPane>
+                                                <TableView fx:id="tableProductos" maxHeight="1.7976931348623157E308" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.2);" tableMenuButtonVisible="true">
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                    <contextMenu>
+                                                        <ContextMenu>
+                                                            <items>
+                                                                <MenuItem fx:id="item_eliminar" mnemonicParsing="false" text="Eliminar" />
+                                                            </items>
+                                                        </ContextMenu>
+                                                    </contextMenu>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                                </TableView>
+                                            </children>
+                                            <GridPane.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </GridPane.margin>
+                                        </GridPane>
+                                        <Button fx:id="btnConfirmar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button--standar" text="Confimar venta" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                            <GridPane.margin>
+                                                <Insets bottom="20.0" left="20.0" right="10.0" top="10.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button fx:id="btnVerTotal" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Mostrar total" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                                            <GridPane.margin>
+                                                <Insets bottom="20.0" left="10.0" right="20.0" top="10.0" />
+                                            </GridPane.margin>
+                                            <styleClass>
+                                                <String fx:value="botones" />
+                                                <String fx:value="button--no-inportant" />
+                                            </styleClass>
+                                        </Button>
+                                        <Separator prefWidth="394.0" GridPane.rowIndex="1">
+                                            <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                            </GridPane.margin>
+                                        </Separator>
+                                        <Button fx:id="btnAnadir" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="118.0" minWidth="79.0" mnemonicParsing="false" styleClass="button--no-inportant" text="Añadir" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                                            <GridPane.margin>
+                                                <Insets />
+                                            </GridPane.margin>
+                                        </Button>
+                                    </children>
+                                </GridPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Detalles de venta">
+                            <content>
+                                <GridPane hgap="20.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="21.0" minHeight="21.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="566.0" minHeight="10.0" prefHeight="555.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <GridPane maxWidth="1.7976931348623157E308" prefHeight="511.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Label styleClass="marca-agua" text="Bienvenido a" GridPane.halignment="CENTER">
+                                                    <font>
+                                                        <Font size="50.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.45" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                    <image>
+                                                        <Image url="@../assets/images/logo-principal.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <Label styleClass="marca-agua" text="Mi tienda" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                                    <font>
+                                                        <Font name="System Bold" size="50.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </GridPane>
+                                        <TableView fx:id="tableDetalles" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.2);" tableMenuButtonVisible="true" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                                            <contextMenu>
+                                                <ContextMenu>
+                                                    <items>
+                                                        <MenuItem fx:id="item_intercambiar" mnemonicParsing="false" text="Intercambiar producto" />
+                                                        <MenuItem fx:id="item_devolver" mnemonicParsing="false" text="Devolver producto" />
+                                                    </items>
+                                                </ContextMenu>
+                                            </contextMenu>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                        </TableView>
+                                        <Label text="Dinero actual" GridPane.columnIndex="2" GridPane.valignment="TOP">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="tfDineroActual" alignment="CENTER" editable="false" prefHeight="24.0" prefWidth="122.0" styleClass="txtDineroActual" text="Sin productos" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                    </padding>
+                                </GridPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Productos">
+                            <content>
+                                <GridPane hgap="20.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="21.0" minHeight="21.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="566.0" minHeight="10.0" prefHeight="555.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <GridPane maxWidth="1.7976931348623157E308" prefHeight="511.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Label styleClass="marca-agua" text="Bienvenido a" GridPane.halignment="CENTER">
+                                                    <font>
+                                                        <Font size="50.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.45" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                    <image>
+                                                        <Image url="@../assets/images/logo-principal.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <Label styleClass="marca-agua" text="Mi tienda" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                                    <font>
+                                                        <Font name="System Bold" size="50.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </GridPane>
+                                        <TableView fx:id="tableProductosRegistrados" editable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.2);" tableMenuButtonVisible="true" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy></TableView>
+                                        
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                    </padding>
+                                </GridPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </TabPane>
+            </children>
+        </VBox>
+    </children>
+</HBox>

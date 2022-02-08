@@ -1,0 +1,74 @@
+
+
+producto:
+
+	<<Atributos>>
+
+		- nombre 
+		- unidades
+		- precio
+		- id
+		- vendido, devuelto, quitado (boolean) 
+
+	<<metodos publicos>>
+
+		(setters, getters)
+		- getNombre
+		- getUnidades
+		- getPrecio
+		- getID
+		- setNombre
+		- setUnidades
+		- setPrecio
+		- setID
+		- getPrecioTotal
+	
+		- isVendido
+		- isDevuelto
+		- isQuitado
+		- venderProducto(int cantidad)
+		- devolverProducto(int cantidad)
+		- quitarProducto(boolean)
+
+	<<metodos privados>>
+
+		- calcularPrecioTotal
+
+usuario:
+	
+	<<atributos>>
+
+		- id
+		- nombres
+		- apellidos
+		- usuario
+		- contraseña	
+		- telefono
+		- direccion
+		- privilegios
+		- estado
+		
+
+	<<metodos publicos>>
+		(setters, getters)
+		- getId
+		- getNombres
+		- getApellidos
+		- getUsuario
+		- getContraseña	
+		- getTelefono
+		- getDireccion
+		- getPrivilegios
+		- getEstado
+		- setId
+		- setNombres
+		- setApellidos
+		- setUsuario
+		- setContraseña	
+		- setTelefono
+		- setDireccion
+		- setPrivilegios
+		- setEstado
+
+		- isActivo
+	

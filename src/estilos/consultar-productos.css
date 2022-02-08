@@ -1,0 +1,11 @@
+@import '../estilos/generales.css';
+
+.image-view{
+    -fx-background-color: red;
+}
+
+
+
+.button-elegir{
+    -fx-background-radius: 2px;
+}

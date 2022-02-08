@@ -1,0 +1,35 @@
+.forma{
+    -fx-fill: #FF3236;
+}
+.label{
+    -fx-text-fill: #FFE3D6;
+}
+.text-area{
+    -fx-background-color: #FFC0AD;
+    -fx-text-fill: #FF6F65;
+}
+.button{
+    -fx-background-radius: 50px;
+    -fx-cursor: hand;
+}
+.boton-comunicarse{
+    -fx-background-color: #3FD2FF;
+    -fx-text-fill: #CCFDFF;
+}
+.boton-comunicarse:hover{
+    -fx-background-color: #00B2FF;
+}
+.boton-comunicarse:pressed{
+    -fx-background-color: #008ADB;
+}
+.boton-salir{
+    -fx-text-fill: #FF6F65;
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+.boton-salir:hover{
+    -fx-text-fill: #FFE3D6;
+    -fx-background-color: #FF3236;
+}
+.boton-salir:pressed{
+    -fx-background-color: #DB2438;
+}

@@ -1,0 +1,20 @@
+@import 'generales.css';
+
+.forma{
+    -fx-background-color: -fx-color-success-100;
+}
+.label{
+    -fx-text-fill: -fx-color-success-400;
+}
+.button{
+    -fx-background-color: -fx-color-success-400;
+    -fx-text-fill: -fx-color-success-100;
+    -fx-background-radius: 3em;
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-background-color: -fx-color-success-500;
+}
+.button:pressed{
+    -fx-background-color: -fx-color-success-600;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/estilos/codigo-barra.css</url>
+            <bookmark id="1">
+                <name/>
+                <line>1</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/PrincipalController.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/IntercambiarProductoController.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/util/HeaderFooterPageEvent.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/util/InventarioPDF.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/ventanas/Confirmar.fxml</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/main/ScanBarProjectFX.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/LoginController.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/RegistrarProductosController.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/TerminarSesionController.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/DevolverProductoController.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/util/Producto.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/ModificarProductosController.java</file>
+            <file>file:/C:/Users/410N50/Documents/NetBeansProjects/ScanBarProjectFX/src/controladores/ConfirmarController.java</file>
+        </group>
+    </open-files>
+</project-private>

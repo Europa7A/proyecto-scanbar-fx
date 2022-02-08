@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="771.0" stylesheets="@../estilos/generales.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TerminarSesionController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="238.0" prefWidth="415.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="316.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="434.0" minHeight="10.0" prefHeight="267.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="434.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane prefHeight="436.0" prefWidth="330.0" GridPane.rowSpan="6">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="122.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="84.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="106.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="78.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="tf200" alignment="CENTER" promptText="200 Bs." styleClass="text-field--input" GridPane.columnIndex="1" />
+            <TextField fx:id="tf100" alignment="CENTER" promptText="100 Bs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tf50" alignment="CENTER" promptText="50 Bs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tf20" alignment="CENTER" promptText="20 Bs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tf10" alignment="CENTER" promptText="10 Bs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tf5" alignment="CENTER" promptText="5 Bs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tf2" alignment="CENTER" promptText="2 Bs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tf1" alignment="CENTER" promptText="1 Bs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tf050" alignment="CENTER" promptText="0.50 ctvs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="tf020" alignment="CENTER" promptText="0.20 ctvs." styleClass="text-field--input" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="100" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="lbl200" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Label text="0.20" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Label text="0.50" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Label text="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Label text="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Label text="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Label text="10" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Label text="20" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label text="50" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label text="200" GridPane.halignment="CENTER" />
+            <Label fx:id="lbl020" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Label fx:id="lbl050" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Label fx:id="lbl1" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Label fx:id="lbl2" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Label fx:id="lbl5" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Label fx:id="lbl10" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Label fx:id="lbl20" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="lbl50" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label fx:id="lbl100" text="Sin valor" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="tfTotalCaja" editable="false" styleClass="text-field--read" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label text="Dinero total en caja:" GridPane.rowIndex="10" />
+            <TextField fx:id="tfTotalBilletes" editable="false" styleClass="text-field--read" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="tfTotalMonedas" editable="false" styleClass="text-field--read" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <TextField fx:id="tfDineroVentas" editable="false" styleClass="text-field--read" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Dinero en ventas:" GridPane.columnIndex="1" />
+      <Label text="Descuadre:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="tfDescuadre" editable="false" styleClass="text-field--read" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="btnFinalizarSesion" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button--standar" text="Finalizar sesión" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Mi tienda.jnlp">
+  <information>
+    <title>Mi tienda</title>
+    <vendor>Alonso Sebastian</vendor>
+    <description>Programa para realizar registro de ventas y productos </description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ScanBarProjectFX.jar" size="931240" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\itext5-itextpdf-5.5.12.jar" size="2320211" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.12-bin.jar" size="732695" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Mi tienda" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="main.ScanBarProjectFX"  name="Mi tienda" />
+  <update check="always"/>
+</jnlp>

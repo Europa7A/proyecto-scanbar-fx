@@ -1,0 +1,6 @@
+@import 'generales.css';
+
+.contenedores{
+    -fx-background-color: -fx-color-info-100;
+    -fx-background-radius: 5px;
+}

@@ -1,0 +1,49 @@
+
+
+.botones{
+    -fx-background-radius: 20;
+    -fx-background-color: #3FD2FF;    
+    -fx-text-fill: #eee;
+    -fx-cursor: hand;
+
+}
+.botones:hover{
+    -fx-background-color: #00B2FF; 
+}
+.botones:pressed{
+    -fx-background-color: #008ADB; 
+}
+/*
+.botones:hover{
+    -fx-background-color: rgba(30,30,30,0.6);  
+    -fx-cursor: hand;
+}
+*/
+.cantidad .increment-arrow-button:hover, .decrement-arrow-button:hover{
+    -fx-body-color: #3FD2FF; 
+}
+.cantidad .increment-arrow-button:pressed, .decrement-arrow-button:pressed{
+    -fx-body-color: #00B2FF; 
+}
+.cantidad .increment-arrow-button, .decrement-arrow-button{
+    -fx-body-color: #66E5FF; 
+
+    -fx-cursor: hand;
+}
+.cantidad .increment-arrow-button .increment-arrow, .decrement-arrow-button .decrement-arrow{
+    -fx-background-color: #CCFDFF;
+}
+.cantidad{
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+.cantidad .text-field{
+    -fx-text-fill: #3FD2FF;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-size: 1.9em;
+    -fx-font-weight: bold;
+}
+
+.text-field, .precio{
+    -fx-background-color: rgba(0,0,0,0.0);
+    -fx-text-fill: #3FD2FF;
+}

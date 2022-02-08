@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="484.0" stylesheets="@../estilos/admin.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.AdminController">
+   <children>
+      <HBox prefHeight="34.0" prefWidth="600.0" styleClass="menu-bar-container">
+         <children>
+            <GridPane minHeight="50.0" minWidth="150.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="124.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.33332824707031" minWidth="10.0" prefWidth="76.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="menu-titulo" text="Mi tienda" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="44.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@../assets/images/logo-principal.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <MenuBar disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="49.0" prefWidth="400.0" HBox.hgrow="ALWAYS">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Productos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Registrar" />
+                        <MenuItem mnemonicParsing="false" text="Modificar" />
+                        <MenuItem mnemonicParsing="false" text="Consultar" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Usuarios">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Registrar" />
+                        <MenuItem mnemonicParsing="false" text="Modificar" />
+                        <MenuItem mnemonicParsing="false" text="Consultar" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Salir" />
+               </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="80.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnProductos" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="150.0" prefWidth="130.0" styleClass="button--standar" text="Productos" GridPane.halignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/products.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnUsuarios" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="150.0" prefWidth="130.0" styleClass="button--standar" text="Usuarios" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="115.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/mod-user.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

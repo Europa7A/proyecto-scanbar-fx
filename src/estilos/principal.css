@@ -1,0 +1,153 @@
+@import 'generales.css';
+
+.principal{
+    -fx-background-color: #fff;
+}
+
+
+/*Scroll-pane*/
+.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+
+}
+.scroll-pane{
+    -fx-background-color: transparent;
+
+}
+
+/*Menu-bar*/
+.menu-titulo{
+    -fx-text-fill: #E8D7FC;
+}
+
+.menu-bar-container{
+    -fx-background-color: #6A39D5;
+}
+.hyperlink{
+    -fx-text-fill: #fff;
+    -fx-underline: false;
+}
+.hyperlink:hover{
+    -fx-background-color: -fx-color-primary-400;
+}
+.hyperlink:focused{
+    -fx-border-color: -fx-focus-color;
+    -fx-border-style: segments(0.166667em, 0.166667em);
+    -fx-border-width: 0px;
+}
+
+
+
+/*Tab-pane*/
+.tab-header-background{
+    -fx-background-color:  #fff;
+}
+.tab{
+    -fx-background-color: #fff; 
+    -fx-padding: 10px;
+    -fx-focus-color: transparent;
+    
+}
+.tab:selected{
+    -fx-background-color: #6A39D5;
+
+}
+
+.tab:selected .tab-label{
+    -fx-text-fill: #E8D7FC;
+}
+.control-buttons-tab .tab-down-button{
+    
+}
+
+.tab-label{
+    -fx-text-fill: #6A39D5;
+}
+
+.tab-content-area{
+   -fx-background-color: #fff; 
+   -fx-border-color: #6A39D5;
+   
+   
+}
+.tab-close-button{
+    
+}
+
+/*filtro degrade*/
+.pane-background{
+    -fx-background-color: linear-gradient(to bottom, white 0%, #333 100%);
+    -fx-blend-mode: multiply;
+}
+
+/*HeaderItems
+.headerItems .label{
+    -fx-text-fill: #00B2FF;
+}
+.headerItems{
+    -fx-background-color:#CCFDFF ;
+    -fx-background-radius: 2em;
+}*/
+
+/*ListView
+
+.list-cell:selected{
+    -fx-background-color: red;
+}
+
+.list-view{
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+.list-cell:odd:hover, .list-cell:even:hover{
+    -fx-background-color: -fx-color-info-300;
+}
+.list-cell:odd:hover *, .list-cell:odd:hover * .text-field, .list-cell:even:hover *,  .list-cell:even:hover * .text-field{
+    -fx-text-fill: white;
+}
+
+
+.list-cell:odd{
+    -fx-background-color: -fx-color-info-100;
+}
+.list-cell:even{
+    -fx-background-color: -fx-color-info-200;
+}*/
+
+
+
+/*Componentes*/
+
+
+
+.marca-agua{
+    -fx-text-fill: #E8D7FC;
+}
+.lblDineroActual{
+    -fx-text-fill: #008ADB;
+}
+.txtDineroActual{
+    -fx-background-color: #008ADB;
+    -fx-text-fill: #CCFDFF;
+    -fx-background-radius: 4px;
+}
+.spinner, .spinner .text-field{
+    -fx-background-color: transparent;
+}
+.table-column, .table-row-cell{
+    -fx-alignment: center;
+}
+
+.table-cell{
+    -fx-padding: 10px;
+}
+.table-row-cell{
+    -fx-font-size: 16px;
+    
+}
+.table-row-cell:odd{
+    -fx-background-color: -fx-color-primary-100;
+}
+.table-row-cell:even{
+    -fx-background-color: -fx-color-primary-200;
+}
+

@@ -1,0 +1,34 @@
+@import '../estilos/generales.css';
+
+
+
+/*Menu-bar*/
+.menu-titulo{
+    -fx-text-fill: #E8D7FC;
+}
+.menu-bar{
+    -fx-background-color: #6A39D5;
+    -fx-alignment: CENTER_RIGHT;
+}
+.menu-bar-container{
+    -fx-background-color: #6A39D5;
+    
+}
+.menu-bar-container .label{
+    
+    -fx-font-weight: bold;
+}
+.menu:hover{
+    -fx-background-color: #CFB1FA;
+    -fx-cursor: hand;
+    
+}
+.menu-bar .menu:hover > .label{
+    -fx-text-fill: #6A39D5;
+}
+.menu-bar .menu > .label{
+    -fx-text-fill: #E8D7FC;;
+}
+.menu-bar .menu{
+   -fx-padding: 2.3333em;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="600.0" stylesheets="@../estilos/registrar-productos.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.RegistrarProductosController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="35.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="384.0" minWidth="10.0" prefWidth="318.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+    <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label styleClass="label--titles" text="REGISTRAR PRODUCTO" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="label--tags" text="ID" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="tfID" editable="false" focusTraversable="false" prefHeight="30.0" styleClass="text-field--read" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="tfNombre" maxWidth="1.7976931348623157E308" minWidth="35.0" prefHeight="35.0" promptText="Ingrese su(s) nombre(s)" styleClass="text-field--input" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="tfDescripcion" maxWidth="1.7976931348623157E308" minWidth="35.0" prefHeight="35.0" promptText="Ingrese una breve descripción" styleClass="text-field--input" GridPane.columnSpan="2" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+      <TextField fx:id="tfCantidad" maxWidth="1.7976931348623157E308" minWidth="35.0" prefHeight="35.0" promptText="Ingrese la cantidad (sólo números enteros)" styleClass="text-field--input" GridPane.columnSpan="2" GridPane.rowIndex="8" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="tfPrecio" maxWidth="1.7976931348623157E308" minWidth="35.0" prefHeight="35.0" promptText="Ingrese sólo números enteros o decimales" styleClass="text-field--input" GridPane.columnSpan="2" GridPane.rowIndex="10" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button fx:id="btnRegistrar" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" styleClass="button--standar" text="Registrar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Button disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" styleClass="button--no-inportant" text="Cancelar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Label text="Nombre" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      <Label text="Cantidad" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+      <Label text="Precio" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+      <Label text="Descripción" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>
